@@ -1,51 +1,34 @@
-/** 
- *
- *  * main - Prints aext according number 
- *
- *   *
- *
- *    *Return: Always (Success)
- *
- *     */
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
+/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-
 {
+	int n;
+	int r;
 
-		int n, lasted;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-			srand(time(0));
+	r = n % 10;
+	if (r > 5)
+	{
+		printf("Last digit of %i is %i and is greater than 5\n", n, r);
+	}
+	else if (r == 0)
+	{
+		printf("Last digit of %i is %i and is 0\n", n, r);
+	}
+	else
+	{
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, r);
+	}
 
-				n = rand() - RAND_MAX / 2;
-
-					lasted = n % 10;
-
-
-
-					if  (lasted > 5)
-
-					{
-
-						printf("last digit of %d is %d and is greater than 5\n", n, lasted);
-
-					}
-
-					else if (lasted == 0)
-
-					{
-
-						printf('last digit of %d is %d and is 0\n", n, lasted);
-
-					}
-
-					else if (lasted < 6 && lasted i= 0)
-
-					{
-
-						printf("Last digit of % is % and less than 6 and not 0\n" n, lasted);
-
-					}
-
-						return (0);
-
+	return (0);
 }
