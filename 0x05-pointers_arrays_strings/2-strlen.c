@@ -18,4 +18,3 @@ u++;
 }
 return (u);
 }
-© 2022 GitHub, Inc.
