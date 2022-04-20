@@ -19,5 +19,3 @@ _putchar (str[a]);
 
 _putchar ('\n');
 }
-© 2022 GitHub, Inc.
-Terms
