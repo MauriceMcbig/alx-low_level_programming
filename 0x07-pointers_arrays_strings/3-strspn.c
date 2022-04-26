@@ -7,12 +7,12 @@
  * Return: Pointer to the first occurrence of the character c in the string s
  **/
 
-char *_strchr(char *s, char c)
+char *_strchr(char *s, char f)
 {
 
 	while (*s != '\0') /*Declaring WHILE*/
 	{
-		if (*s == c) /*if s ==  c*/
+		if (*s == f) /*if s ==  f*/
 		{
 			return (s); /*return s*/
 		}
@@ -20,7 +20,7 @@ char *_strchr(char *s, char c)
 		++s;
 	}
 
-	if (*s == c)
+	if (*s == f)
 	{
 		return (s);
 
