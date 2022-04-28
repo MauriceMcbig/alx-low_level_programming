@@ -1,17 +1,19 @@
 #include "main.h"
 /**
- *_strlen_recursion - length of a string
- *@s: pointer block of memory to fill
- *Return: strlen_recursion
+ *factorial - factorial of a given number
+ *@n: pointer block of memory to fill
+ *Return: factorial
  */
 
-int _strlen_recursion(char *s)
+int factorial(int n)
 {
+if (n == 0) /*Base condition*/
 
-/*Base condition*/
-if (*s == '\0')
-return (0);
+return (1);
 
+else if (n < 0) /*Base condition*/
+return (-1);
 else
-return (1 + _strlen_recursion(s + 1)); /*Sum 1*/
+return (n * factorial(n - 1)); /*Recursive call*/
+
 }
